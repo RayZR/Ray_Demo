@@ -1,0 +1,40 @@
+.form_error{
+    color: red;
+
+}
+#content{
+    height:600px;
+}
+
+#contactFormWrapper{
+    text-decoration-color: lightskyblue;
+    border-radius: 10px;
+    position:relative;
+    float: left;
+    width: 600px;
+
+    margin-top: 50px;
+    padding: 20px;
+
+
+}
+
+textarea#message{
+    width: 400px;
+    height: 300px;
+}
+#name,#email{
+    width: 300px;
+}
+
+#map{
+    margin-top: 50px;
+    margin-right:50px;
+    float:right;
+
+}
+
+#googleMap{
+    height:400px; margin: 0; padding: 0;
+    width: 500px;
+}

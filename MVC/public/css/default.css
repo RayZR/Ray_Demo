@@ -1,0 +1,16 @@
+
+#content{
+    background-color: #EEEEEE;
+}
+
+.bg{
+    background-color: lightblue !important;
+}
+
+.navbar{
+margin-bottom: 0!important;
+}
+.table tbody tr:hover td,
+.table tbody tr:hover th {
+    background-color: lightblue !important;
+}
