@@ -11,6 +11,7 @@ class displayCustomer extends Controller{
     public function __construct(){
         parent::__construct();
         Auth::checkLoggedIn();
+        $this->view->js=array('customer/js/default.js');
     }
 //@Param $pageNumber is use to choose page
     public function  index($pageNumber=0){
@@ -22,6 +23,13 @@ class displayCustomer extends Controller{
         $this->view->page=$pageNumber;
 //        print_r($result[0]);
         $this->view->render('customer/index');
+    }
+
+    public function searchString(){
+        $string=$_POST['searchString'];
+        $result=$this->model->searchString($string);
+        echo json_encode($result);
+
     }
 
 

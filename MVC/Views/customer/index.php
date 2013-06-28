@@ -1,10 +1,13 @@
 Customer
 <form class="form-search">
-    <input type="text" class="input-medium search-query">
-    <button type="submit" class="btn">Search</button>
+    <input id="searchStringInput" type="text" class="input-medium search-query">
+    <button id="searchString" type="submit" class="btn">Search</button>
 </form>
-<table class="table table-striped table-bordered table-condensed">
+<table id="displayCumstomerTable" class="table table-striped table-bordered table-condensed">
+    <thead>
     <tr><th>id</th><th>CustomerName</th><th>CustomerNumber</th><th>CustomerEmail</th><th>CustomerCompany</th><th>CustomerAddress</th><th>PhoneCallTimes</th><th>Option</th></tr>
+    </thead>
+    <tbody>
     <?php
     //display Table
     foreach($this->customers as $key=>$value){
@@ -22,20 +25,21 @@ Customer
     <li><a class="deleteNote" href="'.URL.'displayCustomer/delete/'.$value['id'].'">Delete</a></li></ul> </div></td>';
 
         echo '</tr>';
-
     }
     ?>
+    </tbody>
 </table>
-<div class="pagination pagination-centered">
+<div id="paginationLinks" class="pagination pagination-centered">
     <ul>
 <?php
 //generate links
-echo '<li><a href="'.URL.'displayCustomer/index/0">|<</a></li>';
+echo '<li><a href="'.URL.'displayCustomer">|<</a></li>';
 $pre=$this->page-1;
 if($pre<0){
-    $pre=0;
-}
+    echo '<li><a href="'.URL.'displayCustomer"><</a></li>';
+}else{
 echo '<li><a href="'.URL.'displayCustomer/index/'.$pre.'"><</a></li>';
+}
 for($i=0;$i<$this->totalPages;$i++){
    $number=$i+1;
     if($i==$this->page){

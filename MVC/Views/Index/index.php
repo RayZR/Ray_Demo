@@ -12,8 +12,8 @@
             <img src="<?php echo URL;?>public/upload/a.jpg" alt="">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Example headline.</h1>
-                    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <h1>Ray Zhang</h1>
+                    <p class="lead">Free Lance Web Developer</p>
                     <a class="btn btn-large btn-primary" href="#">Sign up today</a>
                 </div>
             </div>
@@ -22,7 +22,7 @@
             <img src="<?php echo URL;?>public/upload/b.jpg" alt="">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Another example headline.</h1>
+                    <h1>PHP+Mysql+Javascript</h1>
                     <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                     <a class="btn btn-large btn-primary" href="#">Learn more</a>
                 </div>
@@ -32,7 +32,7 @@
             <img src="<?php echo URL;?>public/upload/c.jpg" alt="">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>One more for good measure.</h1>
+                    <h1>Bootstrap,AngularJs and node.js</h1>
                     <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                     <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
                 </div>

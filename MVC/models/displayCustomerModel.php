@@ -22,4 +22,11 @@ class displayCustomerModel extends Model{
         return array($totalPages,$result);
     }
 
+    public function searchString($string){
+//        echo $string;
+        $result=$this->db->select("SELECT * FROM mytable WHERE CustomerName LIKE '%".$string."%'");
+        return $result;
+
+    }
+
 }

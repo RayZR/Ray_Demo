@@ -2,11 +2,11 @@
 <form id="uploadFile" action="<?php echo URL; ?>CV/upload" method="post" enctype="multipart/form-data">
 
     <input type="file" name="uploadFile"/>
-    <input type="submit" value="upload">
+    <button class="btn" type="submit" >upload</button>
 
 </form>
 
-<div class="progress">
+<div class="progress progress-striped">
     <div class="bar"></div >
     <div class="percent">0%</div >
 </div>
