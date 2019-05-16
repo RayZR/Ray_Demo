@@ -15,7 +15,7 @@ define('DB_TYPE','mysql');
 define('DB_HOST','localhost');
 define('DB_NAME','mvc');
 define('DB_USER','root');
-define('DB_PASS','870813');
+define('DB_PASS','password');
 
 /*set up directories to library and host*/
 define('URL','http://localhost/MVC/');
